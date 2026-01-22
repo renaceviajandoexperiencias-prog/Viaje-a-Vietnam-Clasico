@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Clásico 9D8N - Oferta Premium</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Garamond', serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background: #f0f0f0;
+        }
+        
+        .container {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .page {
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            page-break-after: always;
+            position: relative;
+        }
+
+        /* ESTILOS GENERALES */
+        .header-bar {
+            background: linear-gradient(90deg, #1a472a 0%, #2d6a4f 100%);
+            color: white;
+            padding: 20px;
+            margin: -40px -40px 30px -40px;
+            text-align: center;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .subtitle-header {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #1a472a;
+            margin: 30px 0 20px 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #1a472a;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #2d6a4f;
+            margin: 15px 0 10px 0;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 12px;
+            text-align: justify;
+            line-height: 1.7;
+            color: #3a3a3a;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+            border-left: 5px solid #ff6b35;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            background: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #2d6a4f;
+            border-radius: 3px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .benefit-item strong {
+            color: #ff6b35;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .itinerary-item {
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #ff6b35;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .itinerary-item strong {
+            color: #1a472a;
+            font-size: 14px;
+        }
+
+        .pricing-main {
+            background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .pricing-main .price-label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .pricing-main .original-price {
+            font-size: 18px;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 8px;
+        }
+
+        .pricing-main .final-price {
+            font-size: 56px;
+            font-weight: bold;
+            color: #ff6b35;
+            margin: 15px 0;
+        }
+
+        .pricing-main .price-details {
+            font-size: 14px;
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+
+        .included-list {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .included-list ul {
+            list-style: none;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .included-list li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        .included-list li:before {
+            content: "✓";
+            color: #ff6b35;
+            font-weight: bold;
+            font-size: 16px;
+            position: absolute;
+            left: 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8555 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .cta-box h3 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .cta-box p {
+            color: white;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 13px;
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+
+        .contact-info strong {
+            color: #1a472a;
+            font-size: 14px;
+        }
+
+        .footer-bar {
+            background: #1a472a;
+            color: white;
+            padding: 15px;
+            margin: 30px -40px -40px -40px;
+            text-align: center;
+            font-size: 12px;
+            margin-top: auto;
+        }
+
+        /* PÁGINA 1 */
+        .page-1 {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .page-1 .main-title {
+            font-size: 64px;
+            color: #1a472a;
+            margin: 30px 0;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .page-1 .main-subtitle {
+            font-size: 28px;
+            color: #2d6a4f;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .page-1 .date-badge {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .page-1 .cta-btn {
+            background: #1a472a;
+            color: white;
+            padding: 18px 50px;
+            font-size: 18px;
+            border-radius: 50px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .page-1 .tagline {
+            font-size: 16px;
+            color: #666;
+            margin-top: 40px;
+            font-style: italic;
+        }
+
+        /* UTILIDADES */
+        .spacer {
+            height: 20px;
+        }
+
+        .column-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .column-item {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .urgency-badge {
+            background: #ff6b35;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .container {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+        }
+
+        .page-break {
+            page-break-after: always;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PÁGINA 1: PORTADA -->
+<div class="container page page-1">
+    <h1 class="main-title">VIETNAM CLÁSICO</h1>
+    <p class="main-subtitle">Descubre la Magia de Oriente</p>
+    <div class="date-badge">JUNIO 2026</div>
+    <p style="font-size: 18px; color: #666; margin: 30px 0;">9 Días | 8 Noches | Experiencia Transformadora</p>
+    <button class="page-1 cta-btn">RESERVA TU VIAJE HOY</button>
+    <p class="tagline">Disponibilidad Limitada • Cupos Cerrados Rápidamente</p>
+</div>
+
+<!-- PÁGINA 2: INTRODUCCIÓN + VIETNAM -->
+<div class="container page page-break">
+    <div class="header-bar">
+        <div class="logo-text">VIETNAM CLÁSICO</div>
+        <div class="subtitle-header">9 Días | 8 Noches | Media Pensión</div>
+    </div>
+
+    <h2>¿Por Qué Vietnam?</h2>
+
+    <p style="font-size: 15px;"><strong>Vietnam es uno de los destinos más mágicos y auténticos del mundo.</strong> A diferencia de otros lugares saturados de turismo masivo, Vietnam te ofrece una experiencia genuina, donde la cultura ancestral vive en cada calle, la naturaleza es de ensueño y tu dinero rinde al máximo.</p>
+
+    <div class="highlight-box">
+        <strong>4 Razones Para Viajar a Vietnam en Junio 2026:</strong><br>
+        <br>
+        <strong>🏔️ Belleza Natural Incomparable</strong><br>
+        Bahía de Ha Long (Patrimonio UNESCO), montañas neblinosas, ríos serenos. Paisajes que parecen de otra dimensión.
+        <br><br>
+        <strong>🏯 Riqueza Cultural de Milenios</strong><br>
+        Templos antiguos, palacios imperiales, ciudades que congelaron el tiempo. Cada rincón cuenta historias fascinantes.
+        <br><br>
+        <strong>🍜 Gastronomía de Clase Mundial</strong><br>
+        Considerada una de las mejores del mundo. Desde pho hasta comida callejera auténtica que cambiarán tu paladar.
+        <br><br>
+        <strong>💎 Valor Extraordinario</strong><br>
+        Lujo a precio accesible. 4 estrellas, guías privados, cruceros de ensueño, todo por menos de lo que imaginas.
+    </div>
+
+    <p style="font-size: 12px; color: #999; margin-top: 25px;">*Junio es la estación perfecta: fuera de picos turísticos, con clima favorable y experiencias auténticas.</p>
+</div>
+
+<!-- PÁGINA 3: ITINERARIO -->
+<div class="container page page-break">
+    <div class="header-bar">
+        <div class="logo-text">VIETNAM CLÁSICO</div>
+        <div class="subtitle-header">Tu Itinerario de 9 Días Increíbles</div>
+    </div>
+
+    <h2>El Viaje de Tu Vida Espera</h2>
+
+    <div class="itinerary-item">
+        <strong>Día 1: Llegada a Hanói</strong><br>
+        Bienvenida personalizada. Traslado a tu hotel 4 estrellas. Primer contacto con la energía y magia de Vietnam.
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 2: Hanói - La Capital Milenaria</strong><br>
+        Pagoda de Un Pilar, Mausoleo de Ho Chi Minh, Palacio Presidencial. Paseo en ciclo por el vibrante Casco Antiguo. Café con huevos vietnamita en un lugar especial.
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 3: Bahía de Ha Long - Primera Noche</strong><br>
+        Viaje a la Patrimonio UNESCO. Crucero de lujo. Navegación entre formaciones kársticas de ensueño. Actividades acuáticas. Cena bajo las estrellas.
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 4: Ha Long → Danang → Hoi An</strong><br>
+        Clase de Tai Chi al amanecer. Brunch en el crucero. Vuelo a Danang. Llegada a Hoi An, la joya arquitectónica de Vietnam.
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 5: Hoi An - Ciudad Antigua UNESCO</strong><br>
+        Paseo en bote por el río Thu Bon. Puente Cubierto Japonés (400+ años). Asamblea de Phuc Kien. Casa Tan Ky. Exploración del Casco Antiguo.
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 6: Hoi An → Hue - La Capital Imperial</strong><br>
+        Ruta escénica. Parada en Península de Son Tra. Pagoda Linh Ung. Famoso Paso Hai Van (una de las 10 carreteras costeras más hermosas del mundo).
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 7: Hue - Exploración de la Dinastía Nguyen</strong><br>
+        Complejo de Monumentos UNESCO. Ciudad Imperial. Ciudadela. Ciudad Púrpura Prohibida. Tumbas de emperadores. Vuelo a Ho Chi Minh City.
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 8: Ho Chi Minh City - Historia Viva</strong><br>
+        Túneles de Cu Chi (200km de pasajes subterráneos). Centro de Saigón: Correo Central, Ayuntamiento, Pagoda Ngoc Hoang. Tarde libre explorando la ciudad.
+    </div>
+
+    <div class="itinerary-item">
+        <strong>Día 9: Salida hacia Casa</strong><br>
+        Desayuno final. Traslado al aeropuerto. Regreso transformado por la magia de Vietnam.
+    </div>
+</div>
+
+<!-- PÁGINA 4: BENEFICIOS -->
+<div class="container page page-break">
+    <div class="header-bar">
+        <div class="logo-text">VIETNAM CLÁSICO</div>
+        <div class="subtitle-header">Lo Que Obtienes en Esta Experiencia Premium</div>
+    </div>
+
+    <h2>Tu Experiencia Incluye</h2>
+
+    <div class="benefit-grid">
+        <div class="benefit-item">
+            <strong>🛏️ Alojamiento Premium 4★</strong>
+            Hoteles cuidadosamente seleccionados en cada ciudad. Comodidad y lujo después de cada aventura.
+        </div>
+
+        <div class="benefit-item">
+            <strong>👨‍🏫 Guías Hispanos Expertos</strong>
+            Locales que viven en Vietnam, hablan tu idioma, comparten historias auténticas. Conexión garantizada.
+        </div>
+
+        <div class="benefit-item">
+            <strong>🚗 Transporte Privado 24/7</strong>
+            Coche/van con aire acondicionado solo para ti. Sin autobuses abarrotados. Movimiento fluido y cómodo.
+        </div>
+
+        <div class="benefit-item">
+            <strong>🍽️ Media Pensión Gourmet</strong>
+            Desayunos diarios + almuerzos y cenas en restaurantes auténticos. Prueba lo mejor de la gastronomía vietnamita.
+        </div>
+
+        <div class="benefit-item">
+            <strong>⛵ Crucero 2D/1N Ha Long</strong>
+            Una de las 7 maravillas naturales del mundo. Atardeceres que harán que llores de belleza.
+        </div>
+
+        <div class="benefit-item">
+            <strong>📱 SIM Card de Datos</strong>
+            3GB diarios para compartir tus momentos. Conexión a Internet sin preocupaciones durante todo el viaje.
+        </div>
+
+        <div class="benefit-item">
+            <strong>🎟️ Todas las Entradas Incluidas</strong>
+            Monumentos, museos, sitios históricos. Todo coordinado. Tú solo disfruta.
+        </div>
+
+        <div class="benefit-item">
+            <strong>✨ Experiencias Auténticas</strong>
+            Paseo en ciclo, botes en ríos, cuevas de piedra, túneles históricos. Momentos reales, no turísticos.
+        </div>
+    </div>
+
+    <div class="highlight-box" style="background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%); border-left: 5px solid #2d6a4f;">
+        <strong style="color: #1a472a;">✓ LA LOGÍSTICA COMPLETA RESUELTA</strong><br>
+        Vuelos domésticos, transporte, itinerarios, coordinación con hoteles, reservas de restaurantes. Nosotros nos encargamos de TODO. Tú solo disfruta sin preocupaciones.
+    </div>
+</div>
+
+<!-- PÁGINA 5: PRECIO -->
+<div class="container page page-break">
+    <div class="header-bar">
+        <div class="logo-text">VIETNAM CLÁSICO</div>
+        <div class="subtitle-header">Investimiento en Tu Próxima Gran Aventura</div>
+    </div>
+
+    <h2>El Precio: Increíblemente Accesible</h2>
+
+    <p style="font-size: 14px; text-align: center; color: #666; margin: 20px 0;">Un viaje de esta magnitud, con este nivel de lujo y personalización, normalmente cuesta mucho más.</p>
+
+    <div class="pricing-main">
+        <div class="price-label">Precio Regular de Mercado:</div>
+        <div class="original-price">1.450€ por persona</div>
+        
+        <div style="font-size: 24px; color: white; margin: 15px 0; font-weight: bold;">OFERTA ESPECIAL JUNIO 2026</div>
+        
+        <div class="final-price">1.250€</div>
+        
+        <div class="price-details">
+            <strong>Por persona | Ocupación Doble | Media Pensión</strong><br>
+            Incluye 8 noches de alojamiento 4★ + todas las comidas según itinerario
+        </div>
+    </div>
+
+    <h3 style="color: #1a472a; margin-top: 30px;">¿Qué Incluye Este Precio?</h3>
+
+    <div class="included-list">
+        <ul>
+            <li>✓ 8 noches en hoteles 4 estrellas (Hanói, Ha Long, Hoi An, Hue, Saigón)</li>
+            <li>✓ Desayunos diarios en los hoteles</li>
+            <li>✓ Almuerzos y cenas según itinerario (Media Pensión)</li>
+            <li>✓ Crucero de lujo 2 días / 1 noche en Bahía de Ha Long</li>
+            <li>✓ Guías locales de habla hispana en todas las excursiones</li>
+            <li>✓ Transporte privado con aire acondicionado (coche/van/bus)</li>
+            <li>✓ Todas las entradas a monumentos y sitios históricos</li>
+            <li>✓ SIM card con 3GB de datos diarios (compartida por grupo)</li>
+            <li>✓ Paseos especiales: ciclo en Hanói, bote en río Thu Bon, etc.</li>
+            <li>✓ Agua potable durante las excursiones diarias</li>
+            <li>✓ Coordinación total de logística</li>
+        </ul>
+    </div>
+
+    <p style="font-size: 13px; color: #999; margin-top: 25px; text-align: center;"><strong>Nota:</strong> Los vuelos internacionales no están incluidos. Disponemos de opciones con nuestros partners a mejores tarifas.</p>
+
+</div>
+
+<!-- PÁGINA 6: CALL TO ACTION FINAL -->
+<div class="container page page-break">
+    <div class="header-bar">
+        <div class="logo-text">VIETNAM CLÁSICO</div>
+        <div class="subtitle-header">Tu Viaje Transformador Te Espera</div>
+    </div>
+
+    <h2>¿Es Esta Experiencia Para Ti?</h2>
+
+    <div class="column-2">
+        <div class="column-item">
+            <strong style="color: #ff6b35;">✓</strong> Deseas una experiencia transformadora, no solo turismo
+        </div>
+        <div class="column-item">
+            <strong style="color: #ff6b35;">✓</strong> Quieres todo organizado sin preocupaciones
+        </div>
+        <div class="column-item">
+            <strong style="color: #ff6b35;">✓</strong> Buscas valor extraordinario por tu dinero
+        </div>
+        <div class="column-item">
+            <strong style="color: #ff6b35;">✓</strong> Amas la cultura, historia y gastronomía auténtica
+        </div>
+        <div class="column-item">
+            <strong style="color: #ff6b35;">✓</strong> Prefieres viajes pequeños, privados y personalizados
+        </div>
+        <div class="column-item">
+            <strong style="color: #ff6b35;">✓</strong> Estás listo para cambiar tu perspectiva del mundo
+        </div>
+    </div>
+
+    <div class="cta-box">
+        <h3>¿Cómo Funciona?</h3>
+        <p><strong>PASO 1:</strong> Contacta con nosotros y confirma tus fechas (Junio 2026)</p>
+        <p><strong>PASO 2:</strong> Recibe propuesta detallada con opciones de vuelos</p>
+        <p><strong>PASO 3:</strong> Realiza el depósito y asegura tu lugar</p>
+        <p><strong>PASO 4:</strong> Nosotros coordinamos TODO. Tú disfrutas.</p>
+    </div>
+
+    <div class="highlight-box" style="background: linear-gradient(135deg, #ffe6e6 0%, #fff0f0 100%); border-left: 5px solid #ff6b35;">
+        <strong style="font-size: 16px; color: #c00;">⏰ DISPONIBILIDAD LIMITADA</strong><br>
+        Junio es la estación perfecta. Los cupos se cierran rápidamente. Este es el momento de reservar.
+    </div>
+
+    <h2 style="margin-top: 30px;">Contacta Con Nosotros Hoy</h2>
+
+    <div class="contact-info">
+        <strong>Reserva Tu Viaje</strong><br><br>
+        📧 Email: renaceviajandoexperiencias@gmail.com<br>
+        📱 Teléfono: +34 623 211 438<br><br>
+        <span style="font-size: 12px; color: #666;">Respuesta garantizada dentro de 24 horas</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f5f5f5; border-radius: 5px; font-size: 13px; color: #666;">
+        <p><strong>¿Preguntas?</strong> Estamos aquí para ayudarte. Contacta sin compromiso.</p>
+        <p style="margin-top: 10px; font-style: italic;">Tu siguiente gran aventura comienza con un simple mensaje.</p>
+    </div>
+
+    <div class="footer-bar" style="margin-top: auto;">
+        Vietnam Clásico 9D8N | Experiencias Auténticas en Oriente | Nolan DMC
+    </div>
+</div>
+
+</body>
+</html>
